@@ -51,12 +51,6 @@
   }
 }
 
-.menu {
-  // .menu__block
-  &__block {
-  }
-}
-
 .nav {
   // .nav__menu-burger
   &__menu-burger {
@@ -68,19 +62,52 @@
     gap: 30px;
   }
 
-  // .nav__cottage
-  &__cottage {
-  }
-
   &__choice a {
     align-self: center;
     color: #fff;
+    display: inline-block;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: orange;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
   }
 
   // .nav__apartaments
   &__apartaments {
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 120%;
+      transform: scaleX(0);
+      height: 5px;
+      top: -22px;
+      left: -10px;
+      background-color: orange;
+      border-radius: 5px;
+    }
   }
 }
+
+//стиль для ссылок коттеджи/апартаменты
+.active {
+  &::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+//--------
 
 .info {
   // .info__phone
