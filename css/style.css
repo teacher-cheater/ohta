@@ -47,6 +47,65 @@ html {
   scroll-behavior: smooth;
 }
 
+.header {
+  backdrop-filter: blur(8px);
+  z-index: 0;
+}
+.header__content {
+  z-index: 4;
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  border: 2px solid #fff;
+  background: blur(8px);
+  padding: 20px 0;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  position: fixed;
+  top: 0;
+}
+.header__nav {
+  display: flex;
+  gap: 20px;
+}
+.header__logo {
+  text-align: center;
+  transform: translateX(50%);
+}
+.header__info {
+  display: flex;
+  gap: 20px;
+}
+.header__info a {
+  color: #fff;
+}
+
+.nav__choice {
+  display: flex;
+  gap: 30px;
+}
+.nav__choice a {
+  align-self: center;
+  color: #fff;
+}
+.section {
+  background: url("../img/bg/bg.jpeg") center/cover no-repeat;
+  padding: 100px 100px;
+  height: 100vh;
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+}
+.section__wrapper {
+  max-width: 1230px;
+  margin: 0px auto;
+  width: 100%;
+  height: 100%;
+}
+.section__content {
+  padding: 50px 40px;
+}
 body {
   line-height: 1;
 }

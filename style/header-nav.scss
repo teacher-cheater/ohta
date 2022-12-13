@@ -1,0 +1,93 @@
+.header {
+  //padding: 20px 0;
+  backdrop-filter: blur(8px);
+  z-index: 0;
+  // .header__container
+  &__container {
+  }
+
+  // .header__content
+  &__content {
+    z-index: 4;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    border: 2px solid #fff;
+    background: blur(8px);
+
+    padding: 20px 0;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    position: fixed;
+    top: 0;
+  }
+
+  // .header__nav
+  &__nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  // .nav__menu-burger
+  &__menu-burger {
+  }
+
+  // .header__logo
+  &__logo {
+    text-align: center;
+    transform: translateX(50%);
+  }
+
+  // .header__info
+  &__info {
+    display: flex;
+    gap: 20px;
+  }
+
+  // .header__info
+  &__info a {
+    color: #fff;
+  }
+}
+
+.menu {
+  // .menu__block
+  &__block {
+  }
+}
+
+.nav {
+  // .nav__menu-burger
+  &__menu-burger {
+  }
+
+  // .nav__choice
+  &__choice {
+    display: flex;
+    gap: 30px;
+  }
+
+  // .nav__cottage
+  &__cottage {
+  }
+
+  &__choice a {
+    align-self: center;
+    color: #fff;
+  }
+
+  // .nav__apartaments
+  &__apartaments {
+  }
+}
+
+.info {
+  // .info__phone
+  &__phone {
+  }
+
+  // .info__vacant
+  &__vacant {
+  }
+}
