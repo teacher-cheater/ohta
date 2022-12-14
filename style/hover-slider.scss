@@ -1,26 +1,21 @@
 .hover-slider {
-  padding: 100px 0 0 0;
+  padding: 85px 0 0 0;
 
   // .hover-slider__table
   &__table {
     border: 1px solid rgba(255, 255, 255, 0.4);
     display: grid;
-    //grid-template-columns: 182px 182px;
-    //grid-template-columns: 1fr 1fr;
     grid-template-columns: repeat(2, 1fr);
-    //grid-template-rows: repeat(16, 1fr);
     max-width: 365px;
     overflow: hidden;
   }
 
   // .hover-slider__item
-
   &__item {
     border: 1px solid rgba(255, 255, 255, 0.4);
     max-width: 182px;
     height: 120px;
     overflow: hidden;
-    //display: none;
   }
 
   &__item img {
@@ -28,9 +23,7 @@
     object-fit: cover;
     opacity: 0;
     transition: all 0.4s ease-out 0s;
-    //background: transparent;
     &:hover {
-      //background: url("../img/images/2.jpg") 0 0 / contain no-repeat;
       opacity: 1;
     }
   }

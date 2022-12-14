@@ -23,6 +23,9 @@
 
   &__content {
     //padding: 50px 40px;
+    justify-content: space-between;
+    gap: 20px;
+    display: flex;
   }
 
   &__title {
