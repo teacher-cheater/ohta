@@ -1,3 +1,27 @@
+.section {
+  // .section__text
+  &__text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.38;
+    letter-spacing: 0.05em;
+    color: #0a0a0a;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  // .section__title
+  &__title {
+    font-family: "Mak";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+
 .content {
   // .content__block-main
 
@@ -20,6 +44,7 @@
     padding: 0px 40px 40px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 36px;
   }
 
   &__item {
@@ -27,28 +52,151 @@
     height: 72px;
     padding: 40px 41px 7px;
   }
+
+  // .content__circle-block
+
+  &__circle-block {
+    margin: 0 auto;
+    display: flex;
+    width: 108px;
+    height: 108px;
+
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 84px;
+  }
+
+  // .content__circle-border
+  &__circle-border {
+    background: url("../img/icons/arrow.svg") center / contain no-repeat;
+    width: 50px;
+    height: 35px;
+    position: absolute;
+    top: 35%;
+    left: 27px;
+    transition: all 0.3s ease-in 0s;
+    cursor: pointer;
+    &:hover {
+      transform: translateY(50%);
+    }
+  }
+
+  // .content__arrow
+  &__arrow {
+  }
+
+  // .content__block-calendar
+  &__block-calendar {
+  }
 }
 
 .section {
   // .section__text
+
   &__text {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.38;
-    letter-spacing: 0.05em;
-    color: #0a0a0a;
-    margin-bottom: 20px;
-    text-align: center;
   }
 
   // .section__title
+
   &__title {
-    font-family: "Mak";
-    font-style: normal;
+  }
+}
+
+.calendar {
+  filter: drop-shadow(0px 14px 30px rgba(14, 9, 3, 0.2));
+  background: #d8a608;
+  border-radius: 20px;
+  padding: 30px;
+  // .calendar__items
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  // .calendar__check
+
+  &__check {
+    display: flex;
+    font-size: 18px;
+    line-height: 1.38;
+    color: #0a0a0a;
+    //border-right: 1px solid #ffffff;
+    position: relative;
+    &:not(:last-child) {
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        right: -25px;
+        width: 2px;
+        height: 100%;
+        opacity: 0.4;
+        background: #ffffff;
+      }
+    }
+  }
+
+  // .calendar__check-in
+
+  &__check-in h3 {
     font-weight: 700;
-    font-size: 64px;
-    line-height: 1.2;
-    text-transform: uppercase;
+  }
+
+  // .calendar__choice-date
+
+  &__choice-date {
+    border: 1px solid #0a0a0a;
+    border-radius: 10px;
+    padding: 10px 40px 10px 10px;
+    margin-right: 15px;
+    position: relative;
+    cursor: pointer;
+    &::after {
+      content: "";
+      background: url("../img/icons/calendar.svg") center / contain no-repeat;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 11px;
+      right: 11px;
+    }
+  }
+
+  &__choice-guest {
+    border: 1px solid #0a0a0a;
+    border-radius: 10px;
+    padding: 10px 34px 10px 10px;
+    margin-right: 15px;
+  }
+  // .calendar__check-out
+
+  &__check-out h3 {
+    font-weight: 700;
+  }
+
+  // .calendar__search
+
+  &__search a {
+    display: block;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    align-items: center;
+    text-align: center;
     color: #ffffff;
+
+    background: linear-gradient(279.05deg, #181818 -13.86%, #2b2102 100.89%);
+    box-shadow: 0px 14px 30px rgba(14, 9, 3, 0.2);
+    border-radius: 10px;
+    transition: all 0.2s ease-in 0s;
+    border: 1px solid #0a0a0a;
+    &:hover {
+      background: #d8a608;
+      color: #0a0a0a;
+    }
   }
 }
