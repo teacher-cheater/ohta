@@ -378,11 +378,34 @@ html {
 .calendar__choice-guest {
   border: 1px solid #0a0a0a;
   border-radius: 10px;
-  padding: 10px 34px 10px 10px;
+  padding: 10px 40px 10px 10px;
   margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.calendar__choice-guest::after {
+  content: "";
+  background: url("../img/icons/profile.svg") center/contain no-repeat;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 11px;
+  right: 11px;
+}
+.calendar__check-out {
+  margin-right: 28px;
 }
 .calendar__check-out h3 {
   font-weight: 700;
+  align-self: flex-end;
+}
+.calendar__guest {
+  align-items: end;
+  align-self: flex-end;
+}
+.calendar__search {
+  display: flex;
+  align-items: end;
 }
 .calendar__search a {
   display: block;
