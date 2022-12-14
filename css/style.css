@@ -137,7 +137,7 @@ html {
 .info__vacant {
   position: relative;
 }
-.info__vacant::before {
+.info__vacant::after {
   content: "";
   display: block;
   position: absolute;
@@ -148,7 +148,17 @@ html {
   left: -21px;
   border-radius: 50%;
   z-index: 1;
-  border: 1px solid #000;
+}
+.info__vacant::before {
+  content: "";
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  top: -20px;
+  left: -28px;
+  border-radius: 50%;
+  z-index: 1;
+  border: 1px solid #d88208;
 }
 .info__vacant a {
   position: relative;
@@ -425,6 +435,49 @@ html {
 .calendar__search a:hover {
   background: #d8a608;
   color: #0a0a0a;
+}
+
+.menu-items {
+  padding: 90px 0 0 0;
+}
+.menu-items__wrapper {
+  background: rgba(79, 79, 79, 0.4);
+  backdrop-filter: blur(4px);
+  padding: 78px 28px 28px 28px;
+}
+.menu-items__list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.menu-items__link {
+  position: relative;
+}
+.menu-items__link:not(:last-child) {
+  margin-bottom: 40px;
+}
+.menu-items__link:hover {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.menu-items__link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 7px;
+  left: -33px;
+  background: #fff;
+}
+.menu-items__link a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.38;
+  color: #f2f2f2;
 }
 
 body {
