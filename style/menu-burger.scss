@@ -5,8 +5,11 @@
   border: 1px solid #fff;
   border-radius: 50%;
   align-self: center;
-  box-shadow: inset 1px 1px 10px #000;
   margin-right: 58px;
+  &:hover {
+    box-shadow: inset 1px 1px 10px #000;
+    transition: all 0.4s ease-in 0s;
+  }
 
   // .menu__block
   &__block {

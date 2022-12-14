@@ -1,7 +1,6 @@
 .header {
-  //padding: 20px 0;
   margin: 0 auto;
-  max-width: 1600px;
+  visibility: hidden;
   // .header__container
   &__container {
     background: rgba(255, 255, 255, 0.2);
@@ -10,29 +9,11 @@
 
     padding: 14px 0;
     position: fixed;
-    max-width: 1600px;
     width: 100%;
   }
 
   // .header__content
   &__content {
-    //z-index: 4;
-    //display: flex;
-    //color: #fff;
-    //justify-content: space-between;
-    //margin: 0 auto;
-    //border: 2px solid #fff;
-    //background: blur(8px);
-    //background: rgba(255, 255, 255, 0.2);
-    //border: 1px solid rgba(255, 255, 255, 0.2);
-    //backdrop-filter: blur(48px);
-
-    //padding: 30px 0;
-    //flex-wrap: wrap;
-    //width: 100%;
-    //max-width: 1200px;
-    //position: fixed;
-
     display: flex;
     color: #fff;
     justify-content: space-between;
@@ -54,20 +35,23 @@
 
   // .header__logo
   &__logo {
-    //text-align: center;
-    //transform: translateX(50%);
+    transform: translateX(50%);
   }
 
   // .header__info
   &__info {
     display: flex;
-    gap: 20px;
+    gap: 99px;
     align-self: center;
   }
 
   // .header__info
   &__info a {
     color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.37;
+    color: #ffffff;
   }
 }
 
@@ -84,19 +68,6 @@
     color: #fff;
     display: inline-block;
     position: relative;
-    //&::after {
-    //  content: "";
-    //  display: block;
-    //  position: absolute;
-    //  width: 100%;
-    //  transform: scaleX(0);
-    //  height: 2px;
-    //  bottom: 0;
-    //  left: 0;
-    //  background-color: orange;
-    //  transform-origin: bottom right;
-    //  transition: transform 0.25s ease-out;
-    //}
   }
 
   // .nav__apartaments
@@ -112,7 +83,6 @@
       top: -30px;
       left: -10px;
       background-color: orange;
-      //border-radius: 5px;
     }
   }
 }
@@ -144,13 +114,25 @@
     }
   }
 
-  &__phone img {
-    //width: 24px;
-    //height: 24px;
-    //vertical-align: sub;
-  }
-
   // .info__vacant
   &__vacant {
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      background: #d88208;
+      top: -13px;
+      left: -21px;
+      border-radius: 50%;
+      z-index: 1;
+      border: 1px solid #000;
+    }
+  }
+  &__vacant a {
+    position: relative;
+    z-index: 4;
   }
 }

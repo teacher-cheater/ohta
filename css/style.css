@@ -50,7 +50,7 @@ html {
 
 .header {
   margin: 0 auto;
-  max-width: 1600px;
+  visibility: hidden;
 }
 .header__container {
   background: rgba(255, 255, 255, 0.2);
@@ -58,7 +58,6 @@ html {
   backdrop-filter: blur(48px);
   padding: 14px 0;
   position: fixed;
-  max-width: 1600px;
   width: 100%;
 }
 .header__content {
@@ -74,13 +73,20 @@ html {
   display: flex;
   gap: 10px;
 }
+.header__logo {
+  transform: translateX(50%);
+}
 .header__info {
   display: flex;
-  gap: 20px;
+  gap: 99px;
   align-self: center;
 }
 .header__info a {
   color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.37;
+  color: #ffffff;
 }
 
 .nav__choice {
@@ -129,6 +135,27 @@ html {
   width: 24px;
   height: 24px;
 }
+.info__vacant {
+  position: relative;
+}
+.info__vacant::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background: #d88208;
+  top: -13px;
+  left: -21px;
+  border-radius: 50%;
+  z-index: 1;
+  border: 1px solid #000;
+}
+.info__vacant a {
+  position: relative;
+  z-index: 4;
+}
+
 .section {
   background: url("../img/bg/bg.jpg") 50% center/cover no-repeat;
   height: 100vh;
@@ -149,8 +176,11 @@ html {
   border: 1px solid #fff;
   border-radius: 50%;
   align-self: center;
-  box-shadow: inset 1px 1px 10px #000;
   margin-right: 58px;
+}
+.menu:hover {
+  box-shadow: inset 1px 1px 10px #000;
+  transition: all 0.4s ease-in 0s;
 }
 .menu__block {
   position: relative;
@@ -184,6 +214,49 @@ html {
 }
 .menu__block span::after {
   bottom: 5px;
+}
+
+.main__container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 2200px;
+}
+.main__content {
+  max-width: 1682px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hover-slider {
+  padding: 100px 0 0 0;
+}
+.hover-slider__table {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 365px;
+  overflow: hidden;
+}
+.hover-slider__item {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  max-width: 182px;
+  height: 120px;
+  overflow: hidden;
+}
+.hover-slider__item img {
+  width: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: all 0.4s ease-out 0s;
+}
+.hover-slider__item img:hover {
+  opacity: 1;
+}
+
+.visibily img {
+  opacity: 1 !important;
 }
 
 body {
