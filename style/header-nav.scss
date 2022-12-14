@@ -1,32 +1,51 @@
 .header {
   //padding: 20px 0;
-  backdrop-filter: blur(8px);
-  z-index: 0;
+  margin: 0 auto;
+  max-width: 1600px;
   // .header__container
   &__container {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(48px);
+
+    padding: 14px 0;
+    position: fixed;
+    max-width: 1600px;
+    width: 100%;
   }
 
   // .header__content
   &__content {
-    z-index: 4;
+    //z-index: 4;
+    //display: flex;
+    //color: #fff;
+    //justify-content: space-between;
+    //margin: 0 auto;
+    //border: 2px solid #fff;
+    //background: blur(8px);
+    //background: rgba(255, 255, 255, 0.2);
+    //border: 1px solid rgba(255, 255, 255, 0.2);
+    //backdrop-filter: blur(48px);
+
+    //padding: 30px 0;
+    //flex-wrap: wrap;
+    //width: 100%;
+    //max-width: 1200px;
+    //position: fixed;
+
     display: flex;
     color: #fff;
     justify-content: space-between;
-    border: 2px solid #fff;
-    background: blur(8px);
-
-    padding: 20px 0;
+    margin: 0 auto;
     flex-wrap: wrap;
     width: 100%;
     max-width: 1200px;
-    position: fixed;
-    top: 0;
   }
 
   // .header__nav
   &__nav {
     display: flex;
-    gap: 20px;
+    gap: 10px;
   }
 
   // .nav__menu-burger
@@ -35,14 +54,15 @@
 
   // .header__logo
   &__logo {
-    text-align: center;
-    transform: translateX(50%);
+    //text-align: center;
+    //transform: translateX(50%);
   }
 
   // .header__info
   &__info {
     display: flex;
     gap: 20px;
+    align-self: center;
   }
 
   // .header__info
@@ -52,14 +72,11 @@
 }
 
 .nav {
-  // .nav__menu-burger
-  &__menu-burger {
-  }
-
   // .nav__choice
   &__choice {
     display: flex;
-    gap: 30px;
+    gap: 50px;
+    align-self: center;
   }
 
   &__choice a {
@@ -67,19 +84,19 @@
     color: #fff;
     display: inline-block;
     position: relative;
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      transform: scaleX(0);
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: orange;
-      transform-origin: bottom right;
-      transition: transform 0.25s ease-out;
-    }
+    //&::after {
+    //  content: "";
+    //  display: block;
+    //  position: absolute;
+    //  width: 100%;
+    //  transform: scaleX(0);
+    //  height: 2px;
+    //  bottom: 0;
+    //  left: 0;
+    //  background-color: orange;
+    //  transform-origin: bottom right;
+    //  transition: transform 0.25s ease-out;
+    //}
   }
 
   // .nav__apartaments
@@ -92,10 +109,10 @@
       width: 120%;
       transform: scaleX(0);
       height: 5px;
-      top: -22px;
+      top: -30px;
       left: -10px;
       background-color: orange;
-      border-radius: 5px;
+      //border-radius: 5px;
     }
   }
 }
@@ -112,6 +129,25 @@
 .info {
   // .info__phone
   &__phone {
+    display: flex;
+    gap: 15px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background: url("../img/icons/phone.svg") 0 0 / contain no-repeat;
+      top: -3px;
+      left: -40px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__phone img {
+    //width: 24px;
+    //height: 24px;
+    //vertical-align: sub;
   }
 
   // .info__vacant

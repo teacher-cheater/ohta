@@ -1,6 +1,6 @@
 .section {
-  background: url("../img/bg/bg.jpeg") center / cover no-repeat;
-  padding: 100px 100px;
+  background: url("../img/bg/bg.jpg") 50% center / cover no-repeat;
+  //padding: 280px 100px;
   height: 100vh;
   max-width: 1600px;
   margin: 0 auto;
@@ -8,7 +8,7 @@
   // .section__wrapper
 
   &__wrapper {
-    max-width: 1230px;
+    max-width: 1630px;
     margin: 0px auto;
     //padding: 0px 15px;
     //padding: 200px;
@@ -22,7 +22,7 @@
   }
 
   &__content {
-    padding: 50px 40px;
+    //padding: 50px 40px;
   }
 
   &__title {

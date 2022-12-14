@@ -3,10 +3,13 @@
 @import "section-bg.scss";
 @import "menu-burger.scss";
 
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:regular,600,800&display=swap");
+
 body {
   line-height: 1;
-  //font-family: "Montserrat";
+  font-family: "Nunito Sans";
 }
+
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -18,8 +21,8 @@ body {
   flex-grow: 1;
 }
 
-[class*="__container"] {
-  max-width: 1230px;
-  margin: 0px auto;
-  padding: 0px 15px;
-}
+//[class*="__container"] {
+//  max-width: 1230px;
+//  margin: 0px auto;
+//  padding: 0px 15px;
+//}
