@@ -48,12 +48,22 @@
   &__location {
     border: 1px solid rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(6.5px);
+    position: relative;
+    &::after {
+      content: "";
+      background: url("../img/icons/path.svg") center / contain no-repeat;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
   }
 
   // .menu-items__info
   &__info {
     background: #d88208;
-    padding: 9px 147px 10px 45px;
+    padding: 9px 140px 10px 45px;
   }
 
   // .menu-items__text
