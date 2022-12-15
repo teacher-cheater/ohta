@@ -109,8 +109,8 @@
   background: #d8a608;
   border-radius: 20px;
   padding: 30px;
-  // .calendar__items
 
+  // .calendar__items
   &__items {
     display: flex;
     justify-content: space-between;
@@ -118,7 +118,6 @@
   }
 
   // .calendar__check
-
   &__check {
     display: flex;
     font-size: 18px;
@@ -130,7 +129,7 @@
         content: "";
         display: block;
         position: absolute;
-        right: -25px;
+        right: -12px;
         width: 2px;
         height: 100%;
         opacity: 0.4;

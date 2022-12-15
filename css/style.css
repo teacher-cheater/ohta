@@ -358,7 +358,7 @@ html {
   content: "";
   display: block;
   position: absolute;
-  right: -25px;
+  right: -12px;
   width: 2px;
   height: 100%;
   opacity: 0.4;
@@ -443,12 +443,12 @@ html {
 .menu-items__wrapper {
   background: rgba(79, 79, 79, 0.4);
   backdrop-filter: blur(4px);
-  padding: 78px 28px 28px 28px;
 }
 .menu-items__list {
   display: flex;
   flex-direction: column;
   position: relative;
+  padding: 78px 28px 28px 28px;
 }
 .menu-items__link {
   position: relative;
@@ -480,6 +480,51 @@ html {
   color: #f2f2f2;
 }
 
+.menu-items__contacts {
+  display: flex;
+  padding: 20px 44px;
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #f2f2f2;
+}
+.menu-items__wths a, .menu-items__tlg a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+}
+.menu-items__wths a::before, .menu-items__tlg a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 120%;
+  height: 5px;
+  top: -23px;
+  left: -10px;
+  background-color: orange;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in 0s;
+}
+.menu-items__wths a:hover::before, .menu-items__tlg a:hover::before {
+  transform: scaleX(1);
+}
+.menu-items__location {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(6.5px);
+}
+.menu-items__info {
+  background: #d88208;
+  padding: 9px 147px 10px 45px;
+}
+.menu-items__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
 body {
   line-height: 1;
   font-family: "Nunito Sans";

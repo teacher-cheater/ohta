@@ -1,17 +1,13 @@
 .section {
   background: url("../img/bg/bg.jpg") 50% center / cover no-repeat;
-  //padding: 280px 100px;
   height: 100vh;
-  //max-width: 1600px;
   margin: 0 auto;
   width: 100%;
-  // .section__wrapper
 
+  // .section__wrapper
   &__wrapper {
     max-width: 1920px;
     margin: 0px auto;
-    //padding: 0px 15px;
-    //padding: 200px;
     width: 100%;
     height: 100%;
   }
@@ -22,7 +18,6 @@
   }
 
   &__content {
-    //padding: 50px 40px;
     justify-content: space-between;
     gap: 20px;
     display: flex;
