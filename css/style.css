@@ -243,7 +243,7 @@ html {
 }
 
 .hover-slider {
-  padding: 85px 0 0 0;
+  padding: 88px 0 0 0;
 }
 .hover-slider__table {
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -468,7 +468,7 @@ html {
 }
 
 .menu-items {
-  padding: 90px 0 0 0;
+  padding: 88px 0 0 0;
   max-width: 376px;
 }
 .menu-items__wrapper {
@@ -479,7 +479,7 @@ html {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 78px 28px 28px 28px;
+  padding: 78px 28px 214px 28px;
 }
 .menu-items__link {
   position: relative;
