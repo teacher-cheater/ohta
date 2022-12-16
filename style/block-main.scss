@@ -152,6 +152,9 @@
     padding: 10px 40px 10px 10px;
     margin-right: 15px;
     position: relative;
+    font-size: 18px;
+    line-height: 1.38;
+    background: #d8a608;
     cursor: pointer;
     &::after {
       content: "";
